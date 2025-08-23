@@ -1,0 +1,29 @@
+body 
+{
+    background-color:#121212;
+    color:#00ffff;
+    display:flex;
+    flex-direction:column; 
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+#timedisplay 
+{
+    font-size:20rem; 
+    font-weight:70;
+}
+button 
+{
+    background-color:#00ffff;
+    color:#0d0e0e;
+    margin:1rem 3rem; 
+    border-radius:50px;
+    cursor:pointer;
+    font-size:2rem;
+    transition:all 5s ease-out;
+}
+#sessiondisplay 
+{
+    font-size:1.5rem;
+}
