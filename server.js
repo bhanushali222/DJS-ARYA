@@ -1,0 +1,10 @@
+const express=require('express')
+const app=express()
+app.use(express.json())
+app.get('/',(req,res)=>res.send('Satellite link active'))
+app.get('/status',(req,res)=>res.json({status:'online'}))
+app.get('/telemetry',(req,res)=>res.json({temperature:24,voltage:3.7}))
+app.post('/telemetry', (req, res) => {
+  res.json({ received: req.body })
+})
+app.listen(3000,()=>console.log('server running on http://localhost:3000'))
